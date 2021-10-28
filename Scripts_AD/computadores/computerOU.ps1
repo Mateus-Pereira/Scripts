@@ -1,0 +1,1 @@
+(Get-ADComputer -Filter * -Properties PrimaryGroup | Where-Object {$_.PrimaryGroup -like "*CN=Domain Computers,CN=Users,DC=araujo,DC=corp*"}).count
